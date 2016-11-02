@@ -1,0 +1,249 @@
+html {
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Utility classes like responsive-img and others */
+
+/* Classes that apply to all device sizes */
+body {
+	font-family: sans-serif;
+}
+
+h3 {
+	color: darkgrey;
+}
+
+p {
+	color: lightgrey;
+}
+
+header {
+	background-image: url("coffee-background.jpg");
+	background-size: cover;
+	color: white;
+	border-top: 5px solid #80ffbf;
+}
+
+.header-content {
+	padding: 2em;
+    color: white;
+}
+
+
+header ul {
+    display: flex;
+    padding: 0;
+}
+
+header ul li {
+	list-style-type: none;
+	padding: 1em;
+	background-color: grey;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    opacity: 0.70;
+    margin: 0.5em;
+}
+header ul li a {  
+	color: white
+}
+
+.part-two .feature-icon {
+	display: flex;
+	background-color: #80ffbf;
+	color: white;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;	
+	text-align: center;
+	margin: 0;
+	margin-right: 2.5em;
+	width: 50px;
+	height: 50px;
+}
+
+.part-two {
+	text-align: left;
+}
+
+.part-two .features {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.part-two .feature-description {
+	max-width: 50%;
+	padding-top: 2.5em;
+}
+
+
+.part-three {
+	background-color: lightgrey;
+}
+
+.part-three {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.part-three p {
+	color: darkgrey;
+}
+
+.part-three .notify {
+	order: 2;
+	padding: 1em 9em;
+}
+
+.part-three .video {
+	order: 1;
+	margin-top: 1.5em;
+}
+
+
+.part-three button {
+	background-color: #80ffbf;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    height: 38px;
+}
+
+.part.three input {
+    height: 38px;
+}
+
+.part-four {
+	text-align: center;
+}
+.part-four .faces {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+    padding: 1%;
+
+}
+.part-four .faces li {
+	margin: 0.5em;
+}
+
+.part-four .social-icons {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+    padding: 1%;
+}
+
+.part-four .social-icon {
+	list-style-type: none;
+	padding: 1em;
+	background-color: lightgrey;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    opacity: 0.70;
+    margin: 0.5em;
+}
+
+.part-four .social-icon a {
+	color: white;
+}
+
+footer {
+	width: 100%;
+	background-color: lightgrey;
+	color: darkgrey;
+	font-size: 20px;
+}
+
+footer a {
+	color: white;
+}
+
+footer nav ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+    padding: 1%;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+footer nav ul li {
+	padding: 1em;
+	max-width: 100%;
+}
+
+
+@media only screen and (min-width: 641px) {
+    /* Classes that apply to medium and larger devices */
+
+    .part-two .features {
+    	display: block;
+    }
+
+    .part-two .feature-icon {
+    	margin: 1em auto;
+    }
+
+    .part-two .feature-description {
+    	padding-top: 0;
+		margin: auto;
+    	text-align: center;  
+    }
+
+
+	.part-three .notify {
+		order: 1;
+		width: 50%;
+		padding: 8%;
+	}
+
+	.part-three .video {
+		order: 2;
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Classes that apply to large devices only */
+    header {
+    	padding: 8em;
+    }
+    .part-two {
+		margin: 0 auto;    
+	}
+	.part-two .feature-description {
+		max-width: 100%;
+		padding-right: 1.5em;
+
+	}
+
+
+}
